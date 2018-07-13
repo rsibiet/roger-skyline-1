@@ -1,0 +1,1 @@
+cat <(crontab -l) <(echo '#!/bin/bash'; echo '* 0 * * * if [ ! -f /etc/crontab_cpy ]; then cp /etc/crontab /etc/crontab_cpy fi DIFF=$(diff /etc/crontab /etc/crontab_cpy) if [ "$DIFF" != "" ]; then cp /etc/crontab /etc/crontab_cpy mail -s "/etc/crontab file as been modified" root fi') | crontab -

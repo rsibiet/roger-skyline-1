@@ -1,0 +1,2 @@
+echo "62.210.207.183 intra.42.fr" >> /etc/host
+(pas possible sans les droits sur le fichier host)

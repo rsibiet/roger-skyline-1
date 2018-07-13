@@ -1,0 +1,2 @@
+Je remarque qu'avec 42.fr, seules les 2 adresses publics sont retournees lorsque les DNS interroges sont externs. Depuis l'interieur les adresses prives sont egalement retournees
+
